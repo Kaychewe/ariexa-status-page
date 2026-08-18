@@ -16,6 +16,66 @@ status-website:
       href: /
     - title: Ariexa
       href: https://app.ariexa.com
+  customHeadHtml: '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">'
+  css: |
+    :root {
+      --body-background-color: #F5F8F7 !important;
+      --body-text-color: #12231F !important;
+      --card-background-color: #FFFFFF !important;
+      --card-border-color: #DCE7E3 !important;
+      --nav-background-color: #FFFFFF !important;
+      --nav-border-bottom-color: #DCE7E3 !important;
+      --nav-current-border-bottom-color: #0F6E76 !important;
+      --down-border-left-color: #E5484D !important;
+      --down-background-color: #FDE8E8 !important;
+      --degraded-border-left-color: #F0A020 !important;
+      --up-border-left-color: #17A589 !important;
+      --tag-color: #FFFFFF !important;
+      --tag-up-background-color: #17A589 !important;
+      --tag-down-background-color: #E5484D !important;
+      --tag-degraded-background-color: #F0A020 !important;
+      --change-background-color: #FCEFD1 !important;
+      --error-button-border-color: #0B4F55 !important;
+      --error-button-background-color: #0F6E76 !important;
+      --error-button-color: #FFFFFF !important;
+      --submit-button-border-color: #0B4F55 !important;
+      --submit-button-background-color: #0F6E76 !important;
+      --submit-button-color: #FFFFFF !important;
+      --graph-opacity: 1 !important;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    }
+    h1, h2, h3, h4 {
+      font-weight: 600 !important;
+      letter-spacing: -0.01em;
+    }
+    h1 { font-size: 2.25em !important; }
+    .container { max-width: 860px !important; }
+    nav {
+      padding: 0.75rem 0;
+    }
+    nav .logo {
+      font-weight: 700 !important;
+    }
+    article {
+      border-radius: 0.75rem !important;
+      box-shadow: 0 1px 2px rgba(16,35,31,0.04), 0 4px 14px -6px rgba(16,35,31,0.10);
+      transition: box-shadow 0.15s ease, transform 0.15s ease;
+    }
+    article.link:hover {
+      box-shadow: 0 2px 6px rgba(16,35,31,0.06), 0 10px 24px -8px rgba(16,35,31,0.14);
+      transform: translateY(-1px);
+    }
+    .tag {
+      border-radius: 999px !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.01em;
+    }
+    a.error-button, .submit-button {
+      border-radius: 0.5rem !important;
+      font-weight: 600;
+    }
 
 # See https://upptime.js.org/docs/configuration for notifications, assigning
 # issues, and more.
