@@ -3,7 +3,7 @@ repo: ariexa-status-page
 
 sites:
   - name: Ariexa
-    url: https://app.ariexa.com
+    href: https://app.ariexa.com
 
 status-website:
   cname: status.ariexa.com
@@ -13,9 +13,9 @@ status-website:
   introMessage: Live status for Ariexa, checked every 5 minutes via GitHub Actions.
   navbar:
     - title: Status
-      url: /
+      href: /
     - title: Ariexa
-      url: https://app.ariexa.com
+      href: https://app.ariexa.com
 
 # Visual theme lives in assets/ (global.css, themes/light.css, themes/dark.css)
 # -- Upptime copies that directory over the built site verbatim, since
