@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 body {
   margin: 0;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
   padding-bottom: 2.5rem;
 }
@@ -13,12 +15,13 @@ h4,
 h5,
 h6 {
   margin: 0 0 0.5em 0;
-  font-weight: 400;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   line-height: 1.2;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.1em;
 }
 
 a {
@@ -32,17 +35,19 @@ a {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 860px;
   margin: 0 auto;
   padding: 0 2rem;
   box-sizing: border-box;
 }
 
 article {
-  padding: 1rem 1.25rem;
+  padding: 1.1rem 1.4rem;
   position: relative;
-  border-radius: 0.2rem;
+  border-radius: 0.75rem;
   border: 1px solid;
+  box-shadow: 0 1px 2px rgba(16, 35, 31, 0.04), 0 4px 14px -6px rgba(16, 35, 31, 0.1);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
 }
 article.link a::after {
   content: "";
@@ -52,17 +57,22 @@ article.link a::after {
   top: 0;
   bottom: 0;
 }
+article.link:hover {
+  box-shadow: 0 2px 6px rgba(16, 35, 31, 0.06), 0 10px 24px -8px rgba(16, 35, 31, 0.14);
+  transform: translateY(-1px);
+}
 article + article {
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
 }
 article + h3 {
   margin-top: 1rem;
 }
 h3 {
   opacity: 0.75;
+  font-weight: 500;
 }
 h4 {
-  font-weight: bold;
+  font-weight: 600;
 }
 article.down {
   border-left: 0.2rem solid;
@@ -87,9 +97,11 @@ section + h2 {
 
 .tag {
   display: inline-block;
-  padding: 0.33rem 0.5rem;
-  border-radius: 0.2rem;
+  padding: 0.33rem 0.6rem;
+  border-radius: 999px;
   font-size: 70%;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   vertical-align: middle;
   margin-top: -0.2rem;
   margin-left: 0.5rem;
@@ -99,7 +111,7 @@ dl {
   margin-bottom: 1.5rem;
 }
 dl dt {
-  font-weight: bold;
+  font-weight: 600;
 }
 dl dd {
   margin: 0 0 1rem 0;
@@ -107,6 +119,7 @@ dl dd {
 
 nav {
   border-bottom: 1px solid;
+  padding: 0.5rem 0;
 }
 
 [aria-current] {
@@ -115,6 +128,8 @@ nav {
 
 a.error-button {
   border: 0.1rem solid;
+  border-radius: 0.5rem;
+  font-weight: 600;
 }
 
 /* Theming */
@@ -123,6 +138,8 @@ a.error-button {
   background: #01a3a4;
   color: #fff;
   border-color: transparent;
+  border-radius: 0.5rem;
+  font-weight: 600;
 }
 
 body {
