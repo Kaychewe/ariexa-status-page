@@ -3,7 +3,7 @@ repo: ariexa-status-page
 
 sites:
   - name: Ariexa
-    href: https://app.ariexa.com
+    url: https://app.ariexa.com
 
 status-website:
   cname: status.ariexa.com
@@ -17,11 +17,13 @@ status-website:
     - title: Ariexa
       href: https://app.ariexa.com
 
-# Visual theme lives in assets/ (global.css, themes/light.css, themes/dark.css)
-# -- Upptime copies that directory over the built site verbatim, since
-# .upptimerc.yml itself has no css/theme config keys (see
-# github.com/upptime/uptime-monitor/blob/master/src/interfaces.ts and
-# github.com/upptime/uptime-monitor/blob/master/src/site.ts).
+# Two different config sections use two different keys for a link, verified
+# against source, not guessed:
+#   sites[].url    -- read by uptime-monitor's checker (src/update.ts et al)
+#   navbar[].href  -- read by the SEPARATE @upptime/status-page renderer's
+#                     Nav.svelte (does item.href.replace("$OWNER", ...))
+# Mixing these up breaks the site build with a silent 32-byte
+# "Internal server error" export or a "Checking undefined" crash.
 
 # See https://upptime.js.org/docs/configuration for notifications, assigning
 # issues, and more.
