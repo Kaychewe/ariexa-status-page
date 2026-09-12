@@ -4,17 +4,17 @@
     "url": "https://app.ariexa.com",
     "icon": "https://icons.duckduckgo.com/ip3/app.ariexa.com.ico",
     "slug": "ariexa",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 330,
-    "timeDay": 1037,
-    "timeWeek": 501,
-    "timeMonth": 330,
-    "timeYear": 330,
+    "time": 342,
+    "timeDay": 995,
+    "timeWeek": 524,
+    "timeMonth": 342,
+    "timeYear": 342,
     "dailyMinutesDown": {}
   }
 ]
